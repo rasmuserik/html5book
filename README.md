@@ -1,4 +1,3 @@
-<!--
 # HTML5 - web og apps
 
 *This is an early pre-pre-draft*
@@ -127,7 +126,7 @@ Udkast til indholdsfortegnelse:
         - netværksgrupper
         - virksomheder
 </div><div class="page">
--->
+
 # Indledning
 
 </div><div class="page">
