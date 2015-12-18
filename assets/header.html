@@ -22,8 +22,14 @@
 
 body {
   font-family: "Computer Modern Sans", sans-serif;
-  font-size: 20px;
-  margin: 4rem;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+div span {
+  box-sizing: border-box;
 }
 code pre {
   font-family: "Computer Modern Sans Demi-Condensed", sans-serif;
@@ -55,6 +61,25 @@ h2 {
   text-align: center; 
   font-weight: normal;
 }
+.content {
+  display: inline-block;
+  width: 50rem;
+  margin: 0;
+  padding: 2rem;
+  text-align: left;
+  background: white;
+}
+@media not print {
+  body {
+    background: #ccc;
+    margin: 1rem;
+  }
+  .content {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+  }
+}
+
     </style>
   </head>
   <body>
+    <div class=content>
