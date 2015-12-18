@@ -56,30 +56,41 @@ h1 {
   font-size 4rem;
   text-align: center; 
 }
+
+@media print {
+  h1 .foo {
+    page-break-before: always;
+  }
+}
+
 h2 { 
   font-size 2rem;
   text-align: center; 
   font-weight: normal;
 }
-.content {
-  display: inline-block;
+.page {
+  text-align: left;
   width: 50rem;
-  margin: 0;
-  padding: 2rem;
+  margin: 0rem auto;
+  padding: 2rem 4rem 0rem 4rem;
   text-align: left;
   background: white;
+  page-break-after: always;
 }
 @media not print {
   body {
     background: #ccc;
-    margin: 1rem;
+    margin: 0rem;
   }
-  .content {
+  .page {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    min-height: 50rem;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
 
     </style>
   </head>
   <body>
-    <div class=content>
+    <div class=page>

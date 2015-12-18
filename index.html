@@ -56,36 +56,233 @@ h1 {
   font-size 4rem;
   text-align: center; 
 }
+
+@media print {
+  h1 .foo {
+    page-break-before: always;
+  }
+}
+
 h2 { 
   font-size 2rem;
   text-align: center; 
   font-weight: normal;
 }
-.content {
-  display: inline-block;
+.page {
+  text-align: left;
   width: 50rem;
-  margin: 0;
-  padding: 2rem;
+  margin: 0rem auto;
+  padding: 2rem 4rem 0rem 4rem;
   text-align: left;
   background: white;
+  page-break-after: always;
 }
 @media not print {
   body {
     background: #ccc;
-    margin: 1rem;
+    margin: 0rem;
   }
-  .content {
+  .page {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    min-height: 50rem;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
 
     </style>
   </head>
   <body>
-    <div class=content>
-<h1 id="html5-webapps">HTML5 Web/apps</h1>
-<p>... TODO book content</p>
-<p>123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789</p>
+    <div class=page>
+<h1 id="html5---web-og-apps">HTML5 - web og apps</h1>
+<p><em>This is an early pre-pre-draft</em></p>
+<p>Udkast til indholdsfortegnelse:</p>
+<ul>
+<li>Indledning
+<ul>
+<li>Bogens formål: oversigtstur over html5 - fokus på udvikling/api'er og ikke webdesign. Subjektivt, baseret på egne interesser</li>
+<li>Målgruppe
+<ul>
+<li>Overblik over hvad man kan for ikke-teknikere</li>
+<li>Inspiration for udviklere</li>
+</ul></li>
+<li>Om forfatteren</li>
+</ul></li>
+<li>Hvad er HTML5 - HTML5 platformen (overblik: ikke-teknisk)
+<ul>
+<li>Hvad er HTML5</li>
+<li>Web - website, cms widgets</li>
+<li>Apps - native, hybrid,</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul></li>
+<li>Byggeklodser
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>JSON</li>
+<li>Frontend og Backend</li>
+<li>Web og Apps</li>
+</ul></li>
+<li>HTML5 Funktionalitet
+<ul>
+<li>Input
+<ul>
+<li>Touch</li>
+<li>GPS</li>
+<li>Kamera/mikrofon</li>
+<li>Orientering</li>
+<li>fil &quot;download&quot;</li>
+<li>battery status, netværskinformation</li>
+</ul></li>
+<li>Grafik
+<ul>
+<li>CSS - animations, shadows, ...</li>
+<li>SVG - vektor grafik</li>
+<li>Canvas - 2d - simpel raster grafik</li>
+<li>WebGL - 3d/2d grafik acceleret med grafikkort</li>
+<li>fullscreen</li>
+</ul></li>
+<li>Medier
+<ul>
+<li>Video (preload, etc.)</li>
+<li>Lyd</li>
+</ul></li>
+<li>Netværk og multitasking
+<ul>
+<li>webrtc</li>
+<li>websocket</li>
+<li>appcache</li>
+<li>messages</li>
+<li>webworkers</li>
+<li>service-workers</li>
+</ul></li>
+<li>Performance
+<ul>
+<li>binære data</li>
+<li>timing</li>
+<li>Generational garbage collection</li>
+<li>Implicitte klasser og polymorfic inline caching</li>
+<li>Implicitte typer, og asm.js, and webassembly</li>
+</ul></li>
+<li>Diverse
+<ul>
+<li>App-config config.xml, manifest.json, meta/link-headers</li>
+<li>database: localstorage, indexeddb/websql</li>
+<li>Semantic web</li>
+<li>Kryptografi</li>
+<li>Blobs</li>
+<li>vibration</li>
+<li>promises</li>
+</ul></li>
+</ul></li>
+<li>Kom i gang med udvikling: step-by-step 1-dags kursus
+<ul>
+<li>Github-account</li>
+<li>cloud-9</li>
+<li>npm start projekt</li>
+<li>kørsel af kodeeksempler fra bogen (hjælperedskaber fra bogen)</li>
+</ul></li>
+<li>Funktionsbiblioteker
+<ul>
+<li>React + react-native</li>
+<li>localforage</li>
+<li>PouchDB</li>
+<li>Leaflet</li>
+<li>Markdown</li>
+<li>D3.js</li>
+<li>pixi.js</li>
+<li>Phaser</li>
+<li>IPFS</li>
+<li>Three.js</li>
+<li>socket.io</li>
+<li>modernizr</li>
+<li>evt. ionic</li>
+<li>lodash/underscore, async,</li>
+</ul></li>
+<li>Programmeringssprog
+<ul>
+<li>JavaScript/EcmaScript
+<ul>
+<li>JSON.stringify serialisation..</li>
+<li>transpiling, vs. ES3/ES5</li>
+<li>typed-arrays, let, lambda-functions, string-interpolation</li>
+<li>Moduler</li>
+<li>Promises</li>
+<li>Klasser</li>
+<li>Generators</li>
+<li>Symboler, Map, Set, ...</li>
+<li>imul, clz32 ES7?: SIMD</li>
+</ul></li>
+<li>Emscripten - llvm
+<ul>
+<li>Unity, Unreal-Engine, Godot, Ogre</li>
+<li>Legacy-kode</li>
+<li>C/C++, og andre sprog</li>
+</ul></li>
+<li>ClojureScript
+<ul>
+<li>CSP/core.async</li>
+<li>Reaktiv programmering</li>
+<li>Logikprogrammering</li>
+<li>Closure-compiler</li>
+<li>persistent data structure (also immutable-js)</li>
+<li>Modulsystem</li>
+</ul></li>
+</ul></li>
+<li>Værktøj
+<ul>
+<li>Versionsstyring og Github</li>
+<li>GitHub - readme, badges...</li>
+<li>Test</li>
+<li>npm</li>
+<li>Editor</li>
+<li>JSON</li>
+<li>Markdown</li>
+<li>Kodekvalitet / Linting</li>
+<li>CI travis+browser</li>
+<li>Bundling, - webpack, ...</li>
+<li>browser-autoload</li>
+<li>PhoneGap</li>
+<li>Open Source</li>
+</ul></li>
+<li>Referencer og links
+<ul>
+<li>tutorials</li>
+<li>referencematerialer</li>
+<li>HTML5 i København
+<ul>
+<li>netværksgrupper</li>
+<li>virksomheder
+</div>
+<div class="page">
+<h1 id="indledning">Indledning</h1></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div class="page">
+<h1 id="hvad-er-html5">Hvad er HTML5</h1>
+</div>
+<div class="page">
+<h1 id="html5-funktionalitet">HTML5 funktionalitet</h1>
+</div>
+<div class="page">
+<h1 id="kom-i-gang-med-udvikling">Kom i gang med udvikling</h1>
+</div>
+<div class="page">
+<h1 id="funktionsbiblioteker">Funktionsbiblioteker</h1>
+</div>
+<div class="page">
+<h1 id="programmeringssprog">Programmeringssprog</h1>
+</div>
+<div class="page">
+<h1 id="værktøj">Værktøj</h1>
+</div>
+<div class="page">
+<h1 id="referencer-og-links">Referencer og links</h1>
         <script src="cordova.js"></script>
         <script src="index.js"></script>
     </body>
