@@ -1,0 +1,11 @@
+/figwheel_server.log
+/resources/public/out/**
+/resources/public/solsort.js
+/.lein-*
+/node_modules/
+/target/
+/.repl
+/pom.xml
+/npm-debug.log
+/pom.xml.asc
+/index.pdf
