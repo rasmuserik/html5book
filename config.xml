@@ -3,6 +3,7 @@
   xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>HTML5 Book</name>
     <shortdescription>Draft of HTML5 Book</shortdescription>
+    <date>2016</date>
     <description>
       Planen er at dette bliver en bog om html5
     </description>
