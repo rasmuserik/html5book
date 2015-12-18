@@ -18,23 +18,18 @@ Udkast til indholdsfortegnelse:
     - HTML
     - CSS
     - JavaScript
-- Byggeklodser
-    - HTML
-    - CSS
-    - JavaScript
-    - JSON
     - Frontend og Backend
-    - Web og Apps
-- HTML5 Funktionalitet
+    - JSON
+- HTML5 Byggeklodser
     - Input
         - Touch
         - GPS
         - Kamera/mikrofon
         - Orientering
         - fil "download"
-        - battery status, netværskinformation
-    - Grafik
-        - CSS - animations, shadows, ...
+        - battery status, page-visibility, netværskinformation, ambient-light
+    - Visuelt
+        - DOM og CSS - animations, shadows, ...
         - SVG - vektor grafik
         - Canvas - 2d - simpel raster grafik
         - WebGL - 3d/2d grafik acceleret med grafikkort
@@ -42,6 +37,7 @@ Udkast til indholdsfortegnelse:
     - Medier
         - Video (preload, etc.)
         - Lyd
+        - Webspeech
     - Netværk og multitasking
         - webrtc
         - websocket
@@ -49,16 +45,21 @@ Udkast til indholdsfortegnelse:
         - messages
         - webworkers
         - service-workers
+        - CORS
     - Performance
         - binære data
         - timing
         - Generational garbage collection
         - Implicitte klasser og polymorfic inline caching
         - Implicitte typer, og asm.js, and webassembly
+    - Lager
+        - fileapi
+        - localstorage
+        - database: indexeddb/websql
     - Diverse
         - App-config config.xml, manifest.json, meta/link-headers
-        - database: localstorage, indexeddb/websql
         - Semantic web
+        - Notifications
         - Kryptografi
         - Blobs
         - vibration
@@ -111,13 +112,12 @@ Udkast til indholdsfortegnelse:
     - Test
     - npm
     - Editor
-    - JSON
     - Markdown
     - Kodekvalitet / Linting
     - CI travis+browser
     - Bundling, - webpack, ...
     - browser-autoload
-    - PhoneGap
+    - Cordova/PhoneGap - plugins, crosswalk
     - Open Source
 - Referencer og links
     - tutorials
