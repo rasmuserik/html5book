@@ -2,7 +2,6 @@
 
 *This is an early pre-pre-draft*
 
-
 Udkast til indholdsfortegnelse:
 
 - Indledning 
