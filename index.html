@@ -255,32 +255,65 @@ h2 {
 <li>HTML5 i København
 <ul>
 <li>netværksgrupper</li>
-<li>virksomheder
-</div>
-<div class="page">
-</li>
+<li>virksomheder</li>
 </ul></li>
 </ul></li>
 </ul>
-<h1 id="indledning">Indledning</h1>
 </div>
 <div class="page">
-<h1 id="hvad-er-html5">Hvad er HTML5</h1>
+<h1>Indledning</h1>
 </div>
 <div class="page">
-<h1 id="html5-funktionalitet">HTML5 funktionalitet</h1>
+<h1>Hvad er HTML5</h1>
 </div>
 <div class="page">
-<h1 id="kom-i-gang-med-udvikling">Kom i gang med udvikling</h1>
+<h1>HTML5 funktionalitet</h1>
 </div>
 <div class="page">
-<h1 id="funktionsbiblioteker">Funktionsbiblioteker</h1>
+<h1>Kom i gang med udvikling</h1>
 </div>
 <div class="page">
-<h1 id="programmeringssprog">Programmeringssprog</h1>
+<h1>Funktionsbiblioteker</h1>
 </div>
 <div class="page">
-<h1 id="værktøj">Værktøj</h1>
+<h1>Programmeringssprog</h1>
+</div>
+<div class="page">
+<h1>Værktøj</h1>
+<h2>Kommandoprompten</h2>
+</div>
+<div class="page">
+<h2>Versionsstyring - <code>git</code></h2>
+<p>Versionsstyring er et redskab, der gemmer forskellige udgaver af de filer man arbejder med. Dette giver backup- og undo-funktionalitet, hvor man kan finde tidligere versioner frem. Samtidigt kommer der også en historik, så man kan se hvem der har lavet hvilke ændringer. Det indeholder også funktionalitet til at håndtere når flere har redigeret de samme filer, og er er et vigtigt samarbejdsværktøj. Stortset al softwareudvikling foregår med versionsstyring.</p>
+<p>Git er det mest udbredte versionsstyringssoftware. Terminologi:</p>
+<ul>
+<li>et <em>repositorie</em> er den samlede beholder for historikken og alle versionerne.</li>
+<li>et <em>commit</em> er et punkt i historikken, og indeholder ændringer af en eller flere filer</li>
+<li>at <em>klone</em> et et repositorie, vil sige at lave en ny kopi af koden, typisk på sin egen computer. Denne kan så senere merges tilbage til serveren.</li>
+<li>et <em>pull</em> / <em>push</em> er en opdatering af en kopi fra / til et andet repositorie.</li>
+<li>en <em>diff</em> er forskellen mellem to versioner. Versionstyringsprogrammer gemmer også historikken som ændringer, fremfor at kopiere alle filerne.</li>
+<li>at <em>merge</em> to versioner af koden, vil sige at flette dem sammen igen, så den nye udgave indeholder ændringerne i begge.</li>
+<li>en <em>branch</em> er en forgrening af historien. Kan tænkes som en navngivet kopi af koden, som senere kan merges.</li>
+<li>et <em>remote</em> repositorie, er et som har den samme kode, og som er konfigureret til let at pull'e fra og eventuelt push'e til.</li>
+</ul>
+<p>Det kan naturligvis bruges til alle slags filer, og ikke blot kode. Eksemplevis er historikken for denne bog styret via git. Der findes GUI-værktøjer til git, men for udviklere er det oftest lettest at bruge kommandoprompten.</p>
+</div>
+<div class="page">
+<h3>Git Cheat Sheet</h3>
+<p>Lav ny branch</p>
+<pre><code>git checkout -b BRANCH</code></pre>
+<p>Lav klon af repositorye</p>
+<pre><code>git clone GIT_URL</code></pre>
+<p>Lav nyt tomt arbejdskopi / repositorie</p>
+<pre><code>git init</code></pre>
+<p>Commit alle ændringer, med given beskrivelse</p>
+<pre><code>git commit -am &quot;BESKRIVELSE AF ÆNDRINGERNE&quot;</code></pre>
+<p>Konfigurer default remote, og kopier koden derover:</p>
+<pre><code>git remote add origin $GIT_URL
+git push -u origin master</code></pre>
+<p>Lav nyt repositorie, der fungere some remote, og ikke arbejdskopi</p>
+<pre><code>git init --bare</code></pre>
+<h2>GitHub</h2>
 </div>
 <div class="page">
 <h1 id="referencer-og-links">Referencer og links</h1>

@@ -147,6 +147,9 @@ Udkast til indholdsfortegnelse:
 
 # Værktøj
 
+## Kommandoprompten
+
+</div><div class="page">
 ## Versionsstyring - `git`
 
 Versionsstyring er et redskab, der gemmer forskellige udgaver af de filer man arbejder med.
@@ -168,19 +171,37 @@ Git er det mest udbredte versionsstyringssoftware. Terminologi:
 
 Det kan naturligvis bruges til alle slags filer, og ikke blot kode. 
 Eksemplevis er historikken for denne bog styret via git.
+Der findes GUI-værktøjer til git, men for udviklere 
+er det oftest lettest at bruge kommandoprompten.
 
+</div><div class="page">
 ### Git Cheat Sheet
 
+
+Lav ny branch
+
+    git checkout -b BRANCH
+
+Lav klon af repositorye
+
+    git clone GIT_URL
+
+Lav nyt tomt arbejdskopi / repositorie
+
+    git init
+
+Commit alle ændringer, med given beskrivelse
+
+    git commit -am "BESKRIVELSE AF ÆNDRINGERNE"
 
 Konfigurer default remote, og kopier koden derover:
 
     git remote add origin $GIT_URL
     git push -u origin master
 
+Lav nyt repositorie, der fungere some remote, og ikke arbejdskopi
 
-Lav ny branch
-
-    git checkout -b BRANCH
+    git init --bare
 
 
 ## GitHub
