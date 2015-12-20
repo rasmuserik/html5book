@@ -147,5 +147,43 @@ Udkast til indholdsfortegnelse:
 
 # Værktøj
 
+## Versionsstyring - `git`
+
+Versionsstyring er et redskab, der gemmer forskellige udgaver af de filer man arbejder med.
+Dette giver backup- og undo-funktionalitet, hvor man kan finde tidligere versioner frem.
+Samtidigt kommer der også en historik, så man kan se hvem der har lavet hvilke ændringer. 
+Det indeholder også funktionalitet til at håndtere når flere har redigeret de samme filer,
+og er er et vigtigt samarbejdsværktøj. Stortset al softwareudvikling foregår med versionsstyring.
+
+Git er det mest udbredte versionsstyringssoftware. Terminologi:
+
+- et *repositorie* er den samlede beholder for historikken og alle versionerne.
+- et *commit* er et punkt i historikken, og indeholder ændringer af en eller flere filer
+- at *klone* et et repositorie, vil sige at lave en ny kopi af koden, typisk på sin egen computer. Denne kan så senere merges tilbage til serveren.
+- et *pull* / *push* er en opdatering af en kopi fra / til et andet repositorie.
+- en *diff* er forskellen mellem to versioner. Versionstyringsprogrammer gemmer også historikken som ændringer, fremfor at kopiere alle filerne.
+- at *merge* to versioner af koden, vil sige at flette dem sammen igen, så den nye udgave indeholder ændringerne i begge.
+- en *branch* er en forgrening af historien. Kan tænkes som en navngivet kopi af koden, som senere kan merges.
+- et *remote* repositorie, er et som har den samme kode, og som er konfigureret til let at pull'e fra og eventuelt push'e til.
+
+Det kan naturligvis bruges til alle slags filer, og ikke blot kode. 
+Eksemplevis er historikken for denne bog styret via git.
+
+### Git Cheat Sheet
+
+
+Konfigurer default remote, og kopier koden derover:
+
+    git remote add origin $GIT_URL
+    git push -u origin master
+
+
+Lav ny branch
+
+    git checkout -b BRANCH
+
+
+## GitHub
+
 </div><div class="page">
 # Referencer og links
