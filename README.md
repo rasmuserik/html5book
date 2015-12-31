@@ -128,7 +128,18 @@ Udkast til indholdsfortegnelse:
 
 # Indledning
 
+Dette er en guidet tur rundt i HTML5 platformen.
+Formålet er at give en smagsprøve på, hvilke muligheder der er.
+
+En række selvstændige afsnit giver smagsprøver på features i platformen.
+Først forklares funktionaliteten for lægmand, - og dernæst et par tekniske eksempler på hvorledes man koder det.
+
+
+Begrebet HTML5 bruges her i bred forstand, og fokus vil være på JavaScript programbibliotekerne.
+
 </div><div class="page">
+# Input - mus og touch
+
 # Hvad er HTML5
 
 </div><div class="page">
