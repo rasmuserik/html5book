@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="solsort.apps.html5book" version="0.0.1" 
   xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HTML5 Book-outline (unfinished)</name>
+    <name>HTML5-outline</name>
     <shortdescription>Outline/draft of book about html5</shortdescription>
     <date>2015-12</date>
     <description>
