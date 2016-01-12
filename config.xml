@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="solsort.apps.html5book" version="0.0.1" 
   xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HTML5 Book</name>
-    <shortdescription>Draft of HTML5 Book</shortdescription>
+    <name>HTML5 Book-outline (unfinished)</name>
+    <shortdescription>Outline/draft of book about html5</shortdescription>
     <date>2016</date>
     <description>
-      Planen er at dette bliver en bog om html5
+      An outline for a book about html5, and the tools to create the book itself in html5. 
     </description>
     <author email="app@solsort.com" href="http://solsort.com">solsort.com</author>
     <icon src="assets/icon.png" />
